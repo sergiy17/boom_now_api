@@ -1,7 +1,7 @@
 require 'uri'
 require 'net/http'
 
-class Boom::Client < Boom::Base
+class BoomNow::Client < BoomNow::Base
   def self.get(path, params)
     uri = URI.parse("#{BASE_URL}/#{path}")
 
@@ -12,7 +12,7 @@ class Boom::Client < Boom::Base
 
     request = Net::HTTP::Get.new(uri)
 
-    request['Authorization'] = "Bearer #{Boom::AuthClient.token}"
+    request['Authorization'] = "Bearer #{BoomNow::AuthClient.token}"
     request['Content-Type'] = 'application/json'
     request['Accept'] = 'application/json'
 

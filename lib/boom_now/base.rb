@@ -1,4 +1,4 @@
-class Boom::Base
+class BoomNow::Base
   BASE_URL = 'https://app.boomnow.com/open_api/v1'.freeze
 
   def self.authenticate

@@ -1,6 +1,6 @@
 class Api::ListingsController < ApplicationController
   def search
-    result = BoomApi::Listings.call(params: search_params)
+    result = BoomNowApi::Listings.call(params: search_params)
 
     if result.success?
       render json: { result: result.data[:listings] }
