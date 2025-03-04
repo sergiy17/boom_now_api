@@ -6,6 +6,7 @@
 1. Clone the repo with `git clone https://github.com/sergiy17/boom_now_api.git`
 2. To setup the BE part `cd boom_now_api && bundle && rails db:setup && rails s`
 3. To start a FE part `cd boom_now_api && npm install && cd client && npm start`
+4. Create `.env` file in the dir root. Place the `CLIENT_ID` and `CLIENT_SECRET` inside it.  
 </details>
 
 <details>
