@@ -97,6 +97,7 @@ GEM
     debug (1.8.0)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    dotenv (3.1.7)
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
@@ -108,6 +109,7 @@ GEM
     irb (1.8.3)
       rdoc
       reline (>= 0.3.8)
+    kind (5.10.0)
     loofah (2.21.4)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -206,6 +208,11 @@ GEM
     timeout (0.4.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    u-attributes (2.8.0)
+      kind (>= 4.0, < 6.0)
+    u-case (4.5.2)
+      kind (>= 5.6, < 6.0)
+      u-attributes (>= 2.7, < 3.0)
     webrick (1.8.1)
     websocket (1.2.10)
     websocket-driver (0.7.6)
@@ -223,6 +230,7 @@ DEPENDENCIES
   bootsnap (~> 1.17.0)
   capybara
   debug
+  dotenv
   pg (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.1.1)
@@ -230,6 +238,7 @@ DEPENDENCIES
   spring
   sprockets-rails
   tzinfo-data
+  u-case
 
 RUBY VERSION
    ruby 3.2.2p53
